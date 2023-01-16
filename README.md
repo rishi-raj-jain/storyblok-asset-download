@@ -10,21 +10,22 @@ Since traffic is a paid parameter do not download your assets every hour; If you
 
 ## How to run
 
-1. Install dependencies
-  
+1. Install dependencies:
+
 ```
 npm install
 ```
 
-2. Configure the index.js
+2. Add two .env variables:
 
-```javascript
-const config = {
-  // on your space dashboard
-  space: 'YOUR_SPACE_ID',
-  // https://www.storyblok.com/docs/management-api/authentication#authentication
-  oauthToken: 'YOUR_OAUTH_TOKEN'
-}
+```bash
+# filename: .env
+
+# on your space dashboard
+STORYBLOK_SPACE_ID=
+
+# https://www.storyblok.com/docs/management-api/authentication#authentication
+STORYBLOK_ACCOUNT_OAUTH_TOKEN=
 ```
 
 3. Run the script
@@ -32,4 +33,3 @@ const config = {
 ```
 node index.js
 ```
-

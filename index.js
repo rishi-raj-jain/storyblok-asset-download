@@ -6,7 +6,7 @@ const axios = require('axios')
 const StoryblokClient = require('storyblok-js-client')
 
 const config = {
-  space: process.env.STORYBLOK_SPACE,
+  space: process.env.STORYBLOK_SPACE_ID,
   oauthToken: process.env.STORYBLOK_ACCOUNT_OAUTH_TOKEN,
 }
 
